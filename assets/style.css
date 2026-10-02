@@ -1,0 +1,41 @@
+html, body, [class*="css"], .stApp {font-family: 'Segoe UI', system-ui, sans-serif;}
+h1,h2,h3 {font-family:'Segoe UI',system-ui,sans-serif!important; letter-spacing:-.035em!important;}
+h1 {font-size: clamp(2.15rem,4vw,3.65rem)!important; line-height:1.12!important;}
+.block-container {max-width:1240px;padding-top:2.8rem;padding-bottom:4rem;}
+[data-testid="stSidebar"] {background:#edf2fb;border-right:1px solid #dce4f2;}
+[data-testid="stSidebar"] .block-container {padding-top:1.4rem;}
+.eyebrow {font-size:.76rem;letter-spacing:.16em;font-weight:800;color:#526686;text-transform:uppercase;margin-bottom:12px;}
+.hero {background:linear-gradient(115deg,#10294f,#174a7b);color:#fff;padding:38px 40px;border-radius:24px;margin:12px 0 26px;position:relative;overflow:hidden;}
+.hero h1,.hero h2 {color:#fff!important;max-width:820px;}
+.hero p {color:#d9e7fa;max-width:740px;font-size:1.08rem;}
+.hero .eyebrow{color:#96c7ff;}
+.hero-tag {display:inline-block;border:1px solid #597797;border-radius:30px;padding:7px 13px;font-size:.8rem;margin:10px 8px 0 0;color:#ebf4ff;}
+.path {display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:22px 0;}
+.path-node {font-size:.7rem;letter-spacing:.035em;padding:13px 12px;border-radius:12px;border:1px solid #dce4f2;background:white;font-weight:800;}
+.path-arrow{color:#7e90b0;font-weight:700;}
+.learning-card {padding:25px;background:#fff;border:1px solid #e0e7f3;border-top:4px solid var(--accent);border-radius:16px;min-height:212px;box-shadow:0 7px 25px #23477706;}
+.learning-card h3{font-size:1.15rem!important;line-height:1.3;margin:12px 0;}
+.learning-card p{font-size:.94rem;color:#53627b;}
+.part-number{font-weight:800;color:var(--accent);font-size:.75rem;letter-spacing:.14em;}
+.word-row {display:flex;gap:12px;flex-wrap:wrap;margin:18px 0;align-items:stretch;}
+.word-piece {flex:1;min-width:135px;background:#fff;border:1px solid #dce4f2;border-radius:15px;padding:22px;text-align:center;}
+.word-piece strong{display:block;font-size:1.85rem;color:#2463eb;overflow-wrap:anywhere;}
+.word-piece small {color:#687890;letter-spacing:.09em;text-transform:uppercase;}
+.entity-row{display:flex;gap:8px;flex-wrap:wrap;padding:16px 0;}
+.entity {display:inline-flex;flex-direction:column;gap:9px;padding:14px 16px;border-radius:12px;background:#e9edf4;font-weight:700;color:#35465f;}
+.entity small{font-size:.65rem;letter-spacing:.06em;opacity:.85;}
+.PER {background:#fce5ec;color:#9a204a}.ORG {background:#e2f3e7;color:#17663a}.LOC{background:#e0edff;color:#174c9e}.DATE{background:#eee5ff;color:#664299}.TECH{background:#fff0c5;color:#755511}.NP,.NP\?{background:#e0edff;color:#174c9e}.VP,.VP\?{background:#e2f3e7;color:#17663a}
+.prompt {border-left:4px solid #2463eb;background:#eaf1ff;border-radius:0 13px 13px 0;padding:20px 24px;margin:18px 0;font-size:1.2rem;}
+.stage {font-size:.8rem;letter-spacing:.13em;color:#7950c9;font-weight:800;margin:20px 0;}
+.fsm {text-align:center;background:white;border:1px solid #dce4f2;border-radius:18px;padding:22px;margin:18px 0;}
+.fsm .state{display:inline-block;border:2px solid #91b5ee;border-radius:50px;padding:10px 22px;background:#eaf1ff;font-weight:800;}
+.fsm .branches{display:flex;justify-content:center;gap:12px;margin:14px 0;flex-wrap:wrap;}
+.fsm .branch{background:#f2f5fa;border-radius:10px;padding:12px 22px;}
+.fsm .active{background:#d8f4e4;border-color:#14805e;animation:appear .35s ease;}
+.footer {border-top:1px solid #dce4f2;margin-top:40px;padding-top:18px;color:#718098;font-size:.78rem;}
+[data-testid="stButton"] button {border-radius:10px;min-height:42px;font-weight:600;}
+[data-testid="stForm"]{background:#fff;border:1px solid #dce4f2;border-radius:16px;}
+[data-testid="stMetric"]{background:#fff;border:1px solid #e0e7f3;border-radius:15px;padding:15px;}
+@keyframes appear{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;}}
+@media(max-width:700px){.hero{padding:24px}.block-container{padding-left:1rem;padding-right:1rem}.learning-card{min-height:0}.path-node{font-size:.63rem}.word-piece{min-width:100px;padding:14px}.word-piece strong{font-size:1.3rem;}}
